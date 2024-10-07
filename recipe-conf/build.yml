@@ -1,0 +1,35 @@
+dishes:
+  acquia_enterprise_low_code:
+    name: "Enterprise Low-code"
+    description: "The low-code starter kit will install Drupal with Site Studio and a UIkit. It provides drag and drop content authoring and low-code site building. An optional content model can be added in the installation process."
+    is_default: true
+    recipes:
+      require: []
+  acquia_community:
+    name: "Community"
+    description: "The community starter kit will install Drupal. An optional content model can be added in the installation process."
+    recipes:
+      require: [ ]
+  acquia_headless:
+    name: "Headless"
+    description: "The headless starter kit preconfigures Drupal for serving structured, RESTful \ncontent to 3rd party content displays such as mobile apps, smart displays and \nfrontend driven websites (e.g. React or Next.js)."
+    recipes:
+      require: [ ]
+
+add_ons:
+  content_model:
+    name: "Do you want to use content model (yes/no) ?"
+    recipes:
+      require:
+        - "fourkitchens/sous-content-types"
+  media_model:
+    name: "Do you want to use media model (yes/no) ?"
+    recipes:
+      require:
+        - "fourkitchens/sous-media"
+#  dam:
+#    name: "DAM"
+#  search:
+#    name: "Search"
+#  security:
+#    name: "Security"

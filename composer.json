@@ -1,7 +1,7 @@
 {
     "name": "acquia/recipe-builder",
     "require": {
-        "drush/drush": "^13.2"
+        "drush/drush": "^12 || ^13.2"
     },
     "autoload": {
         "psr-4": {

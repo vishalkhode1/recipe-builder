@@ -1,0 +1,17 @@
+{
+    "name": "acquia/recipe-builder",
+    "require": {
+        "drush/drush": "^13.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Acquia\\RecipeBuilder\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vishal Khode",
+            "email": "vishal.khode@acquia.com"
+        }
+    ]
+}
